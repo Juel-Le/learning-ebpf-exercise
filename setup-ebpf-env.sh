@@ -35,5 +35,12 @@ cd ../..
 echo "✅ bpftool installed"
 
 echo
+echo "=== Step 4: Install additional dependencies ==="
+sudo apt update
+sudo apt install -y clang llvm llvm-dev libclang-dev libelf-dev gcc-multilib build-essential
+echo "Additional dependencies installed"
+
+
+echo
 echo "eBPF environment setup complete!"
 echo "You can now write and run your eBPF programs."
